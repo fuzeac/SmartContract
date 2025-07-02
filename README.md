@@ -17,7 +17,7 @@ All contracts are built using [OpenZeppelin Contracts](https://github.com/OpenZe
 The smart contract system is modular, with each contract handling a specific piece of the platform's logic.
 
 ### 1. Token & Tokenomics
-* **`FUZEToken.sol`**: The core BEP-20 token contract for FUZE. It features a fixed supply, pausable transfers for security, and is ownable for administrative control.
+* **`FUZEToken.sol`**: The core ERP-20 token contract for FUZE. It features a fixed supply, pausable transfers for security, and is ownable for administrative control.
 * **`VestingContract.sol`**: Manages time-locked token releases for team members, advisors, and private sale investors with customizable cliff and linear vesting schedules. *(Work in Progress)*
 
 ### 2. Core Platform Services
