@@ -1,12 +1,12 @@
 
 
-# FUSE.ac Smart Contracts
+# FUZE.ac Smart Contracts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
-This repository contains the official Solidity smart contracts for the **FUSE.ac** ecosystem. FUSE.ac is a platform designed to bridge the gap between innovative Web3 projects and strategic investors, powered by the FUZE token. The contracts manage the token, core platform services like staking and OTC deals, and future ecosystem expansions.
+This repository contains the official Solidity smart contracts for the **FUZE.ac** ecosystem. FUZE.ac is a platform designed to bridge the gap between innovative Web3 projects and strategic investors, powered by the FUZE token. The contracts manage the token, core platform services like staking and OTC deals, and future ecosystem expansions.
 
 All contracts are built using [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) for security and adherence to community standards.
 
