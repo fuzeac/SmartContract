@@ -194,7 +194,7 @@ abstract contract Pausable is Context {
 /* FUZE Token Contract */
 contract FUZE is ERC20, Ownable, Pausable {
     constructor(address initialOwner)
-        ERC20("FUSE.ac", "FUZE")
+        ERC20("FUZE.ac", "FUZE")
         Ownable(initialOwner)
     {
         _mint(initialOwner, 500_000_000 * (10 ** decimals()));
