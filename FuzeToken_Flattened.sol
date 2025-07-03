@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 /**
  * @title FUZE Token Smart Contract
- * @author Gemini
  * @notice This contract implements a standard ERC20 token with additional features
  * such as ownership control, pausable transfers, and a fixed total supply.
  */
