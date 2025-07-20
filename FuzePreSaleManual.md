@@ -33,17 +33,17 @@ This section details the administrative functions required to deploy and manage 
 
 When deploying the contract, you must provide the following parameters to the constructor. It is critical that these values are correct, as most are **immutable** (cannot be changed after deployment).
 
-| Parameter | Type | Description | Example |
+| Parameter | Type | Description | Value |
 | :--- | :--- | :--- | :--- |
-| `_tokenAddress` | `address` | The address of the ERC20 token being sold (FUZE). | `0x...` |
-| `_stableCoinAddress` | `address` | The address of the ERC20 stablecoin used for payment. | `0x...` |
-| `_stableCoinDecimals`| `uint8` | The number of decimals of the stablecoin. | `6` (for USDT) |
-| `_rate` | `uint256` | The number of FUZE token *wei* (smallest unit) per **whole** stablecoin unit. To calculate, use: `(Tokens Per Stablecoin) * (10 ** FUZE_DECIMALS)`. | `5000 * (10**18)` for a rate of 5000 FUZE per 1 stablecoin. |
-| `_maxUserBuyingLimit`| `uint256` | The maximum amount of stablecoin a single user can spend, in **whole units**. Set to `0` for no limit. | `1000` for a 1000 USDT limit. |
-| `_projectOwner` | `address` | The address that will have administrative control over the sale. | `0x...` (Your admin wallet) |
-| `_tgeUnlockPercent` | `uint256` | The percentage of tokens unlocked immediately at purchase (TGE). | `10` for 10%. |
-| `_cliffPeriod` | `uint256` | The duration in **days** after purchase before linear vesting begins. | `90` for a 90-day cliff. |
-| `_vestingPeriod` | `uint256` | The duration in **days** for linear vesting *after* the cliff ends. | `365` for a 1-year linear vest. |
+| `_tokenAddress` | `address` | The address of the ERC20 token being sold (FUZE). | `0x217708dd4505D11429c54A77771ef060Ac917E36` |
+| `_stableCoinAddress` | `address` | The address of the ERC20 stablecoin used for payment. | `0xdac17f958d2ee523a2206206994597c13d831ec7` |
+| `_stableCoinDecimals`| `uint8` | The number of decimals of the stablecoin. | `6` |
+| `_rate` | `uint256` | The number of FUZE token *wei* (smallest unit) per **whole** stablecoin unit. To calculate, use: `(Tokens Per Stablecoin) * (10 ** FUZE_DECIMALS)`. | `5000 * (10**18)` |
+| `_maxUserBuyingLimit`| `uint256` | The maximum amount of stablecoin a single user can spend, in **whole units**. Set to `0` for no limit. | `100000`|
+| `_projectOwner` | `address` | The address that will have administrative control over the sale. | `0xa115cd8B80fD28Ee00B7248E0129DBA5E761Dfc9`|
+| `_tgeUnlockPercent` | `uint256` | The percentage of tokens unlocked immediately at purchase (TGE). | `10`|
+| `_cliffPeriod` | `uint256` | The duration in **days** after purchase before linear vesting begins. | `10` |
+| `_vestingPeriod` | `uint256` | The duration in **days** for linear vesting *after* the cliff ends. | `2000` |
 
 ### 2.2 Sale Lifecycle Management
 
